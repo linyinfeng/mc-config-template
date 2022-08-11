@@ -8,6 +8,8 @@
     {
       "name": "Fabric Api",
       "modrinthId": "P7dR8mSH",
+      "versionTypeRegex": "release",
+      "filenameRegex": ".*",
       "version": "0.58.0+1.18.2",
       "files": [
         {
@@ -22,6 +24,7 @@
     {
       "name": "Cloth Config API",
       "modrinthId": "9s6osm5g",
+      "primaryFileOnly": true,
       "version": "6.2.62",
       "files": [
         {
@@ -50,13 +53,14 @@
     {
       "name": "Roughly Enough Items",
       "curseForgeId": "310111",
-      "version": "[Fabric 1.18.2] v8.3.521",
+      "versionTypeRegex": "release|beta",
+      "version": "[Fabric 1.18.2] v8.3.525",
       "files": [
         {
-          "filename": "RoughlyEnoughItems-8.3.521.jar",
+          "filename": "RoughlyEnoughItems-8.3.525.jar",
           "file": {
-            "url": "https://edge.forgecdn.net/files/3928/353/RoughlyEnoughItems-8.3.521.jar",
-            "sha1": "1f85bf6f83d5a00972886b643abfcbd2151690d6"
+            "url": "https://edge.forgecdn.net/files/3929/177/RoughlyEnoughItems-8.3.525.jar",
+            "sha1": "ef5d02aae16d087cb0ef3150721be2bd0cdc21db"
           }
         }
       ]

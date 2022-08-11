@@ -7,11 +7,14 @@
   "mods": [
     {
       "name": "Fabric Api",
-      "modrinthId": "P7dR8mSH"
+      "modrinthId": "P7dR8mSH",
+      "versionTypeRegex": "release",
+      "filenameRegex": ".*"
     },
     {
       "name": "Cloth Config API",
-      "modrinthId": "9s6osm5g"
+      "modrinthId": "9s6osm5g",
+      "primaryFileOnly": true
     },
     {
       "name": "Architectury API",
@@ -19,7 +22,8 @@
     },
     {
       "name": "Roughly Enough Items",
-      "curseForgeId": "310111"
+      "curseForgeId": "310111",
+      "versionTypeRegex": "release|beta"
     }
   ]
 }
