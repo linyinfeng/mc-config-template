@@ -17,12 +17,14 @@
       "primaryFileOnly": true
     },
     {
-      "name": "Architectury API",
-      "modrinthId": "lhGA9TYQ"
-    },
-    {
       "name": "Roughly Enough Items",
       "curseForgeId": "310111",
+      "versionTypeRegex": "release|beta"
+    },
+    "https://modrinth.com/mod/sodium",
+    "https://modrinth.com/mod/architectury-api",
+    {
+      "url": "https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap",
       "versionTypeRegex": "release|beta"
     }
   ]
