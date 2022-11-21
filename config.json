@@ -10,13 +10,13 @@
       "modrinthId": "P7dR8mSH",
       "versionTypeRegex": "release",
       "filenameRegex": ".*",
-      "version": "0.58.0+1.18.2",
+      "version": "0.67.0+1.18.2",
       "files": [
         {
-          "filename": "fabric-api-0.58.0+1.18.2.jar",
+          "filename": "fabric-api-0.67.0+1.18.2.jar",
           "file": {
-            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/0.58.0+1.18.2/fabric-api-0.58.0%2B1.18.2.jar",
-            "sha512": "92317b8d48b20d1b370ab67e4954d1db4861b8fb561935edc0c0fc8a525fefbd3c159f3cfbf83ec3455e3179561fab554645138c6d79f5f597abea77dc1a03ed"
+            "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/YDlOLdpm/fabric-api-0.67.0%2B1.18.2.jar",
+            "sha512": "ea23ad5938a427b931096d0554537e84da88bd9ecc96a0e6b87120d6bf56b874c943020ff3db3110be0c69211162ee03bc2ef75a21250b117983f156fa531722"
           }
         }
       ]
@@ -25,13 +25,13 @@
       "name": "Cloth Config API",
       "modrinthId": "9s6osm5g",
       "primaryFileOnly": true,
-      "version": "6.2.62",
+      "version": "6.3.81",
       "files": [
         {
-          "filename": "cloth-config-fabric-6.2.62.jar",
+          "filename": "cloth-config-6.3.81-fabric.jar",
           "file": {
-            "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/6.2.62/cloth-config-fabric-6.2.62.jar",
-            "sha512": "1d30dbc59ac2a8668e5dd3bb7a6d74a8d243cf958d16f4d55670db270414842dc3884687c847cc9815605695ee2403e933f010a17c7ff5e296de43a55872ad0a"
+            "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/gPqHXnrg/cloth-config-6.3.81-fabric.jar",
+            "sha512": "1ec0b4ae55c5c7cb04b8e88c9c20d157cc3fe4e82e74b9334532b3a5ba095c41fafe2b611b78e2cf46ebe0d618c3657fdee81587f72ba2df6d8687e5394bdf26"
           }
         }
       ]
@@ -40,13 +40,13 @@
       "name": "Roughly Enough Items",
       "curseForgeId": "310111",
       "versionTypeRegex": "release|beta",
-      "version": "[Fabric 1.18.2] v8.3.527",
+      "version": "[Fabric 1.18.2] v8.3.571",
       "files": [
         {
-          "filename": "RoughlyEnoughItems-8.3.527.jar",
+          "filename": "RoughlyEnoughItems-8.3.571.jar",
           "file": {
-            "url": "https://edge.forgecdn.net/files/3934/345/RoughlyEnoughItems-8.3.527.jar",
-            "sha1": "e7e8f2bfe2421d94bda94c1dad97e44a89d89b7c"
+            "url": "https://edge.forgecdn.net/files/4082/323/RoughlyEnoughItems-8.3.571.jar",
+            "sha1": "43dae721b7f41a133bc1138762ca42b6a2f3bae8"
           }
         }
       ]
@@ -70,13 +70,13 @@
       "url": "https://modrinth.com/mod/architectury-api",
       "name": "Architectury API",
       "modrinthId": "lhGA9TYQ",
-      "version": "4.9.83+fabric",
+      "version": "4.10.86+fabric",
       "files": [
         {
-          "filename": "architectury-4.9.83-fabric.jar",
+          "filename": "architectury-4.10.86-fabric.jar",
           "file": {
-            "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/4.9.83+fabric/architectury-4.9.83-fabric.jar",
-            "sha512": "ab9aaee2d71d458958178050a76d7a414597530a9f1f0c206114319b61f7f65c5759a863bc67941f6ee874433d38f3c401e08200954b5ce999e797bc19baa74e"
+            "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/rJ54rLqX/architectury-4.10.86-fabric.jar",
+            "sha512": "46904c4dd8ffa7e2057e20315db62f52a33467394e7dcf5858a8784a34abbe5ad5e4237e9955e134374493423f6eeebcd8e42e431cd0ade75b52e9ec067f004a"
           }
         }
       ]
@@ -86,13 +86,13 @@
       "versionTypeRegex": "release|beta",
       "name": "Xaero's Minimap",
       "curseForgeId": 263420,
-      "version": "v22.13.0 for Fabric 1.18.2",
+      "version": "v22.16.2 for Fabric 1.18.2",
       "files": [
         {
-          "filename": "Xaeros_Minimap_22.13.0_Fabric_1.18.2.jar",
+          "filename": "Xaeros_Minimap_22.16.2_Fabric_1.18.2.jar",
           "file": {
-            "url": "https://edge.forgecdn.net/files/3907/318/Xaeros_Minimap_22.13.0_Fabric_1.18.2.jar",
-            "sha1": "9f788941bc72d866a35f646d5faa4d157373d8d4"
+            "url": "https://edge.forgecdn.net/files/4075/399/Xaeros_Minimap_22.16.2_Fabric_1.18.2.jar",
+            "sha1": "fed8fc0c07d209e921c6b12a8bddbc636e3aa2b2"
           }
         }
       ]
