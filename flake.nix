@@ -21,27 +21,18 @@
       ];
       imports = [
         inputs.treefmt-nix.flakeModule
+        inputs.mc-config.flakeModules.mc-config
       ];
       perSystem = {
         pkgs,
         system,
         lib,
         ...
-      }: let
-        contents =
-          if builtins.pathExists ./config.json
-          then
-            inputs.mc-config.lib.mkLaunchers pkgs {
-              launcherConfig = lib.importJSON ./config.json;
-            }
-          else {};
-      in {
-        packages =
-          {
-            inherit (inputs.mc-config.packages.${system}) update;
-          }
-          // inputs.flake-utils.lib.flattenTree contents;
-        checks = self.packages.${system};
+      }: {
+        minecraftConfigurations.example = inputs.mc-config.lib.minecraftConfiguration {
+          inherit pkgs;
+          modules = [./example.nix];
+        };
         treefmt = {
           projectRootFile = "flake.nix";
           programs = {

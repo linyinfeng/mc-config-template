@@ -1,4 +1,4 @@
 result*
-config.json.bak
+*.bak
 .envrc
 .direnv
