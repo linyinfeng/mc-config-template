@@ -28,7 +28,7 @@ jobs:
       run: nix flake check --verbose --print-build-logs
     - name: Build mods-combined
       run: |
-        nix build .#minecraft-nuc-mods-combined --out-link result-mods
+        nix build .#minecraft-example-mods-combined --out-link result-mods
         mkdir mods
         cp result-mods/* mods/
     - name: Upload mods
