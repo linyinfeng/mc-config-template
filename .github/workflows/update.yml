@@ -33,6 +33,9 @@ jobs:
         nix run .#update
       env:
         CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
+    - name: Format code
+      run: |
+        nix fmt
     - name: Create pull request
       uses: peter-evans/create-pull-request@main
       with:

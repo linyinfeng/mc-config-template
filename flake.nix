@@ -1,44 +1,54 @@
 {
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
-    flake-utils-plus.url = "github:gytis-ivaskevicius/flake-utils-plus";
+    flake-parts.url = "github:hercules-ci/flake-parts";
+    flake-utils.url = "github:numtide/flake-utils";
+    treefmt-nix.url = "github:numtide/treefmt-nix";
+    treefmt-nix.inputs.nixpkgs.follows = "nixpkgs";
     mc-config.url = "github:linyinfeng/mc-config";
     mc-config.inputs.nixpkgs.follows = "nixpkgs";
-    mc-config.inputs.flake-utils-plus.follows = "flake-utils-plus";
-    mc-config.inputs.minecraft-nix.follows = "minecraft-nix";
-    mc-config.inputs.minecraft-json.follows = "minecraft-json";
-    minecraft-nix.url = "github:ninlives/minecraft.nix";
-    minecraft-nix.inputs.nixpkgs.follows = "nixpkgs";
-    minecraft-nix.inputs.flake-utils.follows = "flake-utils-plus/flake-utils";
-    minecraft-nix.inputs.metadata.follows = "minecraft-json";
-    minecraft-json.url = "github:ninlives/minecraft.json";
-    minecraft-json.inputs.nixpkgs.follows = "nixpkgs";
-    minecraft-json.inputs.flake-utils.follows = "flake-utils-plus/flake-utils";
+    mc-config.inputs.flake-parts.follows = "flake-parts";
+    mc-config.inputs.treefmt-nix.follows = "treefmt-nix";
   };
-  outputs = inputs@{ self, nixpkgs, mc-config, flake-utils-plus, ... }:
-    let utils = flake-utils-plus.lib;
-    in utils.mkFlake {
-      inherit self inputs;
-      supportedSystems = [ "x86_64-linux" ];
-      outputsBuilder = channels:
-        let
-          pkgs = channels.nixpkgs;
-          system = pkgs.stdenv.hostPlatform.system;
-          inherit (pkgs) lib;
-          contents = if builtins.pathExists ./config.json then
-            mc-config.lib.mkLaunchers pkgs {
+  outputs = inputs @ {flake-parts, ...}:
+    flake-parts.lib.mkFlake {inherit inputs;} ({
+      self,
+      inputs,
+      ...
+    }: {
+      systems = [
+        "x86_64-linux"
+      ];
+      imports = [
+        inputs.treefmt-nix.flakeModule
+      ];
+      perSystem = {
+        pkgs,
+        system,
+        lib,
+        ...
+      }: let
+        contents =
+          if builtins.pathExists ./config.json
+          then
+            inputs.mc-config.lib.mkLaunchers pkgs {
               launcherConfig = lib.importJSON ./config.json;
             }
-          else
-            { };
-        in {
-          inherit contents;
-          packages = utils.flattenTree contents // {
-            inherit (mc-config.packages.${system}) update;
+          else {};
+      in {
+        packages =
+          {
+            inherit (inputs.mc-config.packages.${system}) update;
+          }
+          // inputs.flake-utils.lib.flattenTree contents;
+        checks = self.packages.${system};
+        treefmt = {
+          projectRootFile = "flake.nix";
+          programs = {
+            alejandra.enable = true;
+            prettier.enable = true;
           };
-          checks = self.packages.${system};
-          devShells.default =
-            pkgs.mkShell { packages = with pkgs; [ fup-repl nixfmt fd ]; };
         };
-    };
+      };
+    });
 }

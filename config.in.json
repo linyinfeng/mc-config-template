@@ -1,8 +1,6 @@
 {
-  "server": {
-    "game": {
-      "version": "1.18.2"
-    }
+  "game": {
+    "version": "1.18.2"
   },
   "mods": [
     {
