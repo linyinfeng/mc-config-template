@@ -1,7 +1,7 @@
 {...}: {
-  name = "example";
-  launchers.lockFile = ./example.lock;
-  mcConfig = {
+  name = "minecraft";
+  lock.file = ./minecraft.lock;
+  minecraft = {
     game.version = "1.19.4";
     mods = [
       {

@@ -29,9 +29,9 @@
         lib,
         ...
       }: {
-        minecraftConfigurations.example = inputs.mc-config.lib.minecraftConfiguration {
+        minecraftConfigurations.default = inputs.mc-config.lib.minecraftConfiguration {
           inherit pkgs;
-          modules = [./example.nix];
+          modules = [./minecraft.nix];
         };
         treefmt = {
           projectRootFile = "flake.nix";

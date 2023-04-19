@@ -30,7 +30,7 @@ jobs:
         nix flake update
     - name: Run updater
       run: |
-        nix run .#minecraft-example-update
+        nix run .#minecraft-default-update
       env:
         CURSEFORGE_API_KEY: ${{ secrets.CURSEFORGE_API_KEY }}
     - name: Format code
