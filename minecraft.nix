@@ -3,6 +3,7 @@
   lock.file = ./minecraft.lock;
   minecraft = {
     game.version = "1.19.4";
+    server.eula = true;
     mods = [
       {
         name = "Fabric Api";

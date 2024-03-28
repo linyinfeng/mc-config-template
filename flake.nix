@@ -22,6 +22,7 @@
       imports = [
         inputs.treefmt-nix.flakeModule
         inputs.mc-config.flakeModules.mc-config
+        inputs.flake-parts.flakeModules.easyOverlay
       ];
       perSystem = {
         pkgs,
