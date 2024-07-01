@@ -2,7 +2,7 @@
   name = "minecraft";
   lock.file = ./minecraft.lock;
   minecraft = {
-    game.version = "1.19.4";
+    game.versionRegex = ''^1\.20(\.\d+)?$'';
     server.eula = true;
     mods = [
       {

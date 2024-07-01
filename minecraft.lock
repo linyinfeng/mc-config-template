@@ -1,45 +1,48 @@
 {
+  "game": {
+    "version": "1.20.6"
+  },
   "mods": [
     {
-      "filename": "fabric-api-0.78.0+1.19.4.jar",
+      "filename": "fabric-api-0.100.4+1.20.6.jar",
       "file": {
-        "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/unERf4ZJ/fabric-api-0.78.0%2B1.19.4.jar",
-        "sha512": "4c20197ec5680711b062787a2bf057bffa443ce0e7c6d575ba0f611eb51b525c595dab20493747cd001d5994e70b8e1f0af89f4a57d780709c653dad4f1868e0"
+        "url": "https://cdn.modrinth.com/data/P7dR8mSH/versions/GT0R5Mz7/fabric-api-0.100.4%2B1.20.6.jar",
+        "sha512": "4039d851149a2b825ed85a6a9ba4bf1e29005866b2a0080eacb3579e166fc4e9bc28a3f12e19ee1281e0393f33a37f650b30aea5bd3c5b602f33205887eedc73"
       }
     },
     {
-      "filename": "cloth-config-10.0.96-fabric.jar",
+      "filename": "cloth-config-14.0.126-fabric.jar",
       "file": {
-        "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/6XGTNEII/cloth-config-10.0.96-fabric.jar",
-        "sha512": "2c2ca9ad15fa08e0013505e0fbd661e0ff9861eba5df175037cc948197d7d9c4c6983d0f026321a71e7855fc4941e279ede9c930e2ca373b38402dfd70cc6376"
+        "url": "https://cdn.modrinth.com/data/9s6osm5g/versions/znhJLkCd/cloth-config-14.0.126-fabric.jar",
+        "sha512": "6a1f7e68e2771dd96ba5d8d41f170c8d81fcc5b18b44529ae633e1f67e4738504919bfce42fdf7bfb162ee27d43f0e109919db5718a7269092f550a833bc3eae"
       }
     },
     {
-      "filename": "RoughlyEnoughItems-11.0.597.jar",
+      "filename": "RoughlyEnoughItems-15.0.728-fabric.jar",
       "file": {
-        "url": "https://edge.forgecdn.net/files/4440/734/RoughlyEnoughItems-11.0.597.jar",
-        "sha1": "53eedebdeff9d1b44c7bb82f77afb2b3aadf65fb"
+        "url": "https://edge.forgecdn.net/files/5301/357/RoughlyEnoughItems-15.0.728-fabric.jar",
+        "sha1": "343433a1b4328fd59ed674426a70da04892bad61"
       }
     },
     {
-      "filename": "sodium-fabric-mc1.19.4-0.4.10+build.24.jar",
+      "filename": "sodium-fabric-0.5.11+mc1.20.6.jar",
       "file": {
-        "url": "https://cdn.modrinth.com/data/AANobbMI/versions/b4hTi3mo/sodium-fabric-mc1.19.4-0.4.10%2Bbuild.24.jar",
-        "sha512": "61562626870aa4067657d2687d1fce80fb7d62af32fd68a22708e24ee5b84b39d16b26ccf4db8f53f2da42ba1916d6a5e11efc476cb5c2a8644207659fd5dfef"
+        "url": "https://cdn.modrinth.com/data/AANobbMI/versions/OwLQelEI/sodium-fabric-0.5.11%2Bmc1.20.6.jar",
+        "sha512": "c1f1f0ebb779126acde462dfd010ac142ecd1467bbc0efdb97cdf8d2d4f1ebc3d9c9eb22053757f2a98130012bb9467ed0af0737d984717825c5bf3d1cabbe54"
       }
     },
     {
-      "filename": "architectury-8.1.79-fabric.jar",
+      "filename": "architectury-12.1.3-fabric.jar",
       "file": {
-        "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/tJGqxo3S/architectury-8.1.79-fabric.jar",
-        "sha512": "d09326b83c8ca179b32397a79f6e65f200813da6e5d4796cedecc8cabb86885348ee4b30b592807fd6e3c2ddcdbb7f9e3ec955b8917ce02b16e3bcc148a45f4c"
+        "url": "https://cdn.modrinth.com/data/lhGA9TYQ/versions/uicFHU6j/architectury-12.1.3-fabric.jar",
+        "sha512": "38eb77216583245d38dec9169816399f9ea7396a1517c98228a4b3b9351c95734e0f3f19fb56243b92451022094430e64cb61b88c63ca25bfe025d1e3a8d25cc"
       }
     },
     {
-      "filename": "Xaeros_Minimap_23.3.3_Fabric_1.19.4.jar",
+      "filename": "Xaeros_Minimap_24.2.0_Fabric_1.20.6.jar",
       "file": {
-        "url": "https://edge.forgecdn.net/files/4470/60/Xaeros_Minimap_23.3.3_Fabric_1.19.4.jar",
-        "sha1": "d625d3626bc5a4eeac5a11648e3fe251d1d6ba05"
+        "url": "https://edge.forgecdn.net/files/5394/788/Xaeros_Minimap_24.2.0_Fabric_1.20.6.jar",
+        "sha1": "c312c7f28399126a754a5f638c30c7091fad064a"
       }
     }
   ]
